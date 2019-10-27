@@ -1,0 +1,15 @@
+version: "3.1"
+ mongo:
+   image: mongo:3.6
+   ports:
+     - "27018:27017"
+   volumes:
+          - /userlogin/data/fiware/db:/var/lib/data/db
+   command: mongod --logpath=/dev/null # --quiet
+ orion:
+   image: fiware/orion
+   links:
+     - mongo
+   ports:
+     - "1026:1026"
+   command: -dbhost mongo -reqPoolSize 4 -logLevel ERROR -disableMetrics -reqMutexPolicy none

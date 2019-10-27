@@ -1,0 +1,46 @@
+[
+{ 
+    "_id" : ObjectId("5b1374407e7bf5f1a4fcbbe0"), 
+    "ownedBy" : "ITMO University",
+    "@type" : "swm:SmartWasteContainer", 
+    "Capacity" : {
+        "maximumValue" :  "100.0",
+        "realTimeCapacity" : 23.07692307692308,
+        "@type" : "swm:Capacity", 
+        "@id" : "Capacity"
+    }, 
+    "RFID" : {
+        "@type" : "smw:Rfid", 
+        "rfid"  : "aaa",
+        "@id" : "RFID"
+    }, 
+    "@id" : "ITMO Birjevaya 14", 
+    "AirParameters" : {
+        "hum" :  "72.4",
+        "@type" : "schema:Weather", 
+        "temp" :  "23.7",
+        "@id" : "AirParameters"
+    }, 
+    "AllowedWaste" : [ "swm:Plastic", "swm:Glass"],
+    "geo" : {
+            "latitude" :  "59.9440314",
+            "@type" : "schema:GeoCoordinates", 
+            "coordinates" : [
+                30.3024489, 
+                59.9440314
+            ], 
+            "address" : {
+                "postalCode" :  "199034.0",
+                "@type" : "schema:PostalAddress", 
+                "addressCountry" : "Russia",
+                "addressLocality" : "Vasileostrovsky",
+                "streetAddress" :  "Birjevaya 14",
+                "@id" : "address", 
+                "addressRegion" :  "St.Petersburg"
+            }, 
+            "@id" : "geo", 
+            "type" : "Point", 
+            "longitude" :  "30.3024489"
+        }
+}
+]

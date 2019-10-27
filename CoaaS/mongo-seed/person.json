@@ -1,0 +1,17 @@
+[
+{ 
+    "_id" : ObjectId("5b36e2fb4b9216d2016fa86e"), 
+    "@context" : "http://schema.org", 
+    "@type" : "Person", 
+    "familyName" : "Hass",
+    "email" : "hassani.reza.ali@gmail.com",
+    "@id" : "p1",
+    "geo" : {
+        "@type" : "GeoCoordinates", 
+        "latitude" : "12", 
+        "longitude" : "12"
+    }, 
+    "owns" : "house1",
+    "driverID" : "biotope"
+}
+]
